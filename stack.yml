@@ -7,3 +7,8 @@ functions:
     lang: go
     handler: ./radio
     image: docwareiy/radio:latest
+
+  radio-sofia:
+    lang: python3
+    handler: ./radio-sofia
+    image: docwareiy/radio-sofia:latest
