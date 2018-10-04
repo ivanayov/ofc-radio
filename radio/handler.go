@@ -8,7 +8,7 @@ import (
 
 // Handle a serverless request
 func Handle(req []byte) string {
-	file, err := os.Open("./function/index.html")
+	file, err := os.Open("index.html")
 	if err != nil {
 		log.Fatal(err)
 	}
