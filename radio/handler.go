@@ -1,7 +1,6 @@
 package function
 
 import (
-	"fmt"
 	"log"
 	"os"
 )
