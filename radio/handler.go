@@ -13,10 +13,10 @@ func Handle(req []byte) string {
 		log.Fatal(err)
 	}
 	data := make([]byte, 100)
-	count, err := file.Read(data)
+	_, err := file.Read(data)
 	if err != nil {
 		log.Fatal(err)
 	}
-	return fmt.Sprintf("%q", data[:count])
+	return data
 	// return fmt.Sprintf("Welcome on RADIO, %s!", string(req))
 }
