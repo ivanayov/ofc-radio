@@ -17,6 +17,6 @@ func Handle(req []byte) string {
 	if err != nil {
 		log.Fatal(err)
 	}
-	return data
+	return string(data)
 	// return fmt.Sprintf("Welcome on RADIO, %s!", string(req))
 }
